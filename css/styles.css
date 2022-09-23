@@ -1,0 +1,143 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.logo-header {
+  color: var(--title-text-color);
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo-blue:hover {
+  background-color: rgb(195, 223, 240);
+}
+
+/* Навігація */
+
+.site-nav {
+  list-style: none;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Контакти */
+
+.contact {
+  list-style: none;
+}
+
+.contact-info {
+  color: var(--primary-text-color);
+}
+.contact .contact-info:hover,
+.contact .contact-info:focus {
+  color: var(--accent-color);
+}
+
+/* Основний */
+/* Гергой */
+
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero-title {
+  color: var(--primary-bg-color);
+}
+
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* Переваги */
+
+.section-title-hidden {
+  display: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+/* Спеціалізація */
+
+.specialization-list {
+  list-style: none;
+}
+
+/* Команда */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* Футер */
+
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+
+.logo-footer {
+  color: var(--primary-bg-color);
+}
+
+.logo-footer:hover {
+  background-color: rgb(195, 223, 240);
+}
+
+.address-list {
+  list-style: none;
+  font-style: normal;
+}
+
+.address-postal {
+  color: #ffffff;
+}
+
+/.address-list .contac-info {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list .address-postal:hover,
+.address-list .contact-info:hover {
+  color: var(--accent-color);
+}
+
+.address-list .address-postal:focus,
+.address-list .contact-info:focus {
+  color: var(--accent-color);
+}
