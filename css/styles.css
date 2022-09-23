@@ -19,7 +19,7 @@ body {
   color: var(--accent-color);
 }
 
-.logo:hover,
+.logo-header:hover,
 .logo-blue:hover {
   background-color: rgb(195, 223, 240);
 }
@@ -128,7 +128,7 @@ body {
   color: #ffffff;
 }
 
-/.address-list .contac-info {
+.address-list .contac-info {
   color: rgba(255, 255, 255, 0.6);
 }
 
