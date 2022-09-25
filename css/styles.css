@@ -4,24 +4,35 @@
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
 }
 
+/* Шапка */
+
+/* Верхній логотип */
 .logo-header {
-  color: var(--title-text-color);
+  color: #000000;
 }
 
 .logo-blue {
   color: var(--accent-color);
 }
 
-.logo-header:hover,
-.logo-blue:hover {
-  background-color: rgb(195, 223, 240);
+.logo-header,
+.logo-footer,
+.logo-blue {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* Навігація */
@@ -31,6 +42,12 @@ body {
 }
 .site-nav .link {
   color: var(--title-text-color);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -46,7 +63,14 @@ body {
 
 .contact-info {
   color: var(--primary-text-color);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
 .contact .contact-info:hover,
 .contact .contact-info:focus {
   color: var(--accent-color);
@@ -61,14 +85,37 @@ body {
 
 .hero-title {
   color: var(--primary-bg-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Переваги */
+
+.section > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 .section-title-hidden {
   display: none;
@@ -84,60 +131,128 @@ body {
 
 .feature-list .title {
   color: var(--title-text-color);
-}
-/* Спеціалізація */
 
-.specialization-list {
-  list-style: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-/* Команда */
+.feature-list p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Спеціалізація та команда*/
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--third-bg-color);
 }
 
+.specialization-list,
 .team-list {
   list-style: none;
 }
 
 .team-list .title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Футер */
 
+/* Лого */
 .footer {
   background-color: var(--secondary-bg-color);
 }
 
 .logo-footer {
   color: var(--primary-bg-color);
+  text-decoration: none;
 }
 
-.logo-footer:hover {
-  background-color: rgb(195, 223, 240);
-}
+/* Адреса */
 
 .address-list {
   list-style: none;
   font-style: normal;
 }
 
-.address-postal {
-  color: #ffffff;
+.address-postal,
+.address-list .contact-info {
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-.address-list .contac-info {
+.address-postal {
+  color: var(--primary-bg-color);
+}
+
+.address-list .contact-info {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-list .address-postal:hover,
-.address-list .contact-info:hover {
-  color: var(--accent-color);
+/* Портфоліо */
+
+/* Кнопки */
+
+.portfolio-button-list {
+  list-style: none;
 }
 
-.address-list .address-postal:focus,
-.address-list .contact-info:focus {
-  color: var(--accent-color);
+.portfolio-button-list button {
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button-list button:hover,
+.portfolio-button-list button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* Зразки проектів */
+.portfolio-sample-list {
+  list-style: none;
+}
+
+.portfolio-sample-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-sample-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
