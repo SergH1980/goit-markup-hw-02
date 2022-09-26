@@ -102,6 +102,7 @@ button {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -230,6 +231,7 @@ button {
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
