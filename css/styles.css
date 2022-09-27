@@ -11,6 +11,8 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 00.03em;
 }
 
 /* Шапка */
@@ -32,7 +34,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 /* Навігація */
@@ -40,14 +41,18 @@ body {
 .site-nav {
   list-style: none;
 }
-.site-nav .link {
+
+.nav-link {
   color: var(--title-text-color);
 
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .site-nav .link:hover,
@@ -61,18 +66,17 @@ body {
   list-style: none;
 }
 
-.contact-info {
+.contact-link {
   color: var(--primary-text-color);
 
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.contact .contact-info:hover,
-.contact .contact-info:focus {
+.contact .contact-link:hover,
+.contact .contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -112,14 +116,6 @@ button {
 
 /* Переваги */
 
-.section > h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -134,34 +130,30 @@ button {
   overflow: hidden;
 }
 
-.section-title {
-  color: var(--title-text-color);
-}
-
 .feature-list {
   list-style: none;
 }
 
-.feature-list .title {
+.feature-list-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.feature-list p {
-  font-size: 14px;
+.feature-text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Спеціалізація та команда*/
 
-.team {
-  background-color: var(--third-bg-color);
+.specialization-title,
+.team-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .specialization-list,
@@ -169,20 +161,22 @@ button {
   list-style: none;
 }
 
-.team-list .title {
+.team {
+  background-color: var(--third-bg-color);
+}
+
+.team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-.team-list p {
+.team-list-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Футер */
@@ -205,27 +199,22 @@ button {
 }
 
 .address-postal,
-.address-list .contact-info {
+.contact-footer {
   text-decoration: none;
 
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .address-postal {
   color: var(--primary-bg-color);
 }
 
-.address-list .contact-info {
+.contact-footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-postal:hover,
-.address-list .contact-info:hover,
-.address-postal:focus,
-.address-list .contact-info:focus {
+.contact-footer:hover,
+.contact-footer:focus {
   color: var(--accent-color);
 }
 
@@ -246,7 +235,6 @@ button {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .portfolio-button-list button:hover,
@@ -256,21 +244,19 @@ button {
 }
 
 /* Зразки проектів */
-.portfolio-sample-list {
+.portfolio-sample {
   list-style: none;
 }
 
-.portfolio-sample-list .title {
+.portfolio-sample-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.portfolio-sample-list p {
+.portfolio-sample-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
