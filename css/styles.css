@@ -38,7 +38,7 @@ body {
 
 /* Навігація */
 
-.site-nav {
+.list {
   list-style: none;
 }
 
@@ -61,10 +61,6 @@ body {
 }
 
 /* Контакти */
-
-.contact {
-  list-style: none;
-}
 
 .contact-link {
   color: var(--primary-text-color);
@@ -130,10 +126,6 @@ button {
   overflow: hidden;
 }
 
-.feature-list {
-  list-style: none;
-}
-
 .feature-list-title {
   color: var(--title-text-color);
 
@@ -146,7 +138,7 @@ button {
   line-height: 1.71;
 }
 
-/* Спеціалізація та команда*/
+/* Сфера діяльності та команда*/
 
 .section-title {
   color: var(--title-text-color);
@@ -154,11 +146,6 @@ button {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-.specialization-list,
-.team-list {
-  list-style: none;
 }
 
 .team {
@@ -194,7 +181,6 @@ button {
 /* Адреса */
 
 .address-list {
-  list-style: none;
   font-style: normal;
 }
 
@@ -222,10 +208,6 @@ button {
 
 /* Кнопки */
 
-.portfolio-button-list {
-  list-style: none;
-}
-
 .portfolio-button-list button {
   color: var(--title-text-color);
   background-color: var(--third-bg-color);
@@ -244,9 +226,6 @@ button {
 }
 
 /* Зразки проектів */
-.portfolio-sample {
-  list-style: none;
-}
 
 .portfolio-sample-title {
   color: var(--title-text-color);
