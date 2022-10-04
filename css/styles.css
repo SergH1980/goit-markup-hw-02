@@ -15,6 +15,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 /* Шапка */
 
 /* Верхній логотип */
@@ -38,17 +48,8 @@ body {
 
 /* Навігація */
 
-.list {
-  list-style: none;
-}
-
 .nav-link {
   color: var(--title-text-color);
-
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .current {
@@ -64,11 +65,6 @@ body {
 
 .contact-link {
   color: var(--primary-text-color);
-
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .contact-link:hover,
